@@ -1,45 +1,43 @@
-# Security Policy 🔒
+# Security Policy
 
-## Supported Versions 🛡️
+## Supported Versions
 
-Stay informed about the versions of your project that currently receive security updates.
+| Version | Support Status |
+| ------- | -------------- |
+| v0.0.1  | Not Supported  |
+| v0.0.2  | Not Supported  |
+| v0.0.3  | Supported      |
+| v0.0.4  | Supported      |
 
-| Version | Support          |
-| ------- | ---------------- |
-| v0.0.1  | ❌ Not Supported |
-| v0.0.2  | ❌ Not Supported |
-| v0.0.3  | ✅ Supported     |
-| v0.0.4  | ✅ Supported     |
+---
 
-## Reporting a Vulnerability 🚨
+## Reporting a Vulnerability
 
-Help us enhance security by reporting vulnerabilities in the "python-projects" repository owned by "mrayanasim". To report a vulnerability, create an issue [here](https://github.com/mrayanasim09/python-projects/issues). Your responsible disclosure is crucial.
+To report a security vulnerability in this repository, please [create an issue](https://github.com/mrayanasim09/python-projects/issues).
 
-When reporting a vulnerability, kindly include:
+Include the following in your report:
 
-- **Description**: Clear and concise details of the vulnerability.
-- **Steps to Reproduce**: The steps to replicate the vulnerability.
-- **Expected Behavior**: Your anticipated outcome.
-- **Actual Behavior**: The actual outcome experienced.
-- **Affected Versions**: Indicate impacted versions.
-- **Impact**: Assess potential consequences.
+- **Description** - Clear details of the vulnerability
+- **Steps to Reproduce** - How to replicate the issue
+- **Expected Behavior** - What should happen
+- **Actual Behavior** - What actually happens
+- **Affected Versions** - Which versions are impacted
+- **Impact** - Potential consequences
 
-We commit to swift acknowledgment and review of your report within [X business days]. Our team may seek additional information if necessary.
+We will acknowledge and review your report within 5 business days and may request additional information if needed.
 
-## Vulnerability Response 🛠️
+---
 
-Promptly addressing vulnerabilities is a priority. Severity guides our response. Updates on progress and resolution timelines will be provided regularly.
+## Vulnerability Response
 
-Accepted vulnerabilities lead to developing patches or security updates. Once ready, a new version will address reported vulnerabilities.
+We prioritize addressing vulnerabilities based on severity. Accepted reports will result in a patch or security update. You will receive regular updates on progress and resolution timelines.
 
-Out-of-scope vulnerabilities will be explained. Please note that addressing all reports may not be feasible if they fall beyond our project's scope.
+Reports falling outside the scope of this project will be explained and may not be addressed.
 
-We value the security community's contribution to safeguarding our users. Thank you for your efforts! 👏
+---
 
-## Security Updates 🚀
+## Security Updates
 
-Ensure project security by staying updated. Regularly check the "python-projects" releases page owned by "mrayanasim" for updates. Follow the instructions in the release notes for upgrades.
+To keep your installation secure, regularly check the [releases page](https://github.com/mrayanasim09/python-projects/releases) for security updates and follow the upgrade instructions provided in the release notes.
 
-Note that outdated versions may lack security updates and are vulnerable to known exploits. Upgrade to a supported version for security.
-
-**Note: Tailor this security policy template to your project's specific needs.**
+Outdated versions do not receive security updates and may be vulnerable to known exploits. Please upgrade to a supported version.
