@@ -234,4 +234,3 @@ If you find these projects valuable, consider supporting the work:
   <img src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fmrayanasim09%2Fpython-projects&label=Views&countColor=%23555555&style=flat-square" alt="Views">
   <img src="https://img.shields.io/github/license/mrayanasim09/python-projects" alt="License">
 </p>
-```
