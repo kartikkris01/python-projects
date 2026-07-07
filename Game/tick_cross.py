@@ -55,7 +55,7 @@ def make_computer_move(board, difficulty):
     empty_cells = get_empty_cells(board)
     if empty_cells:
         if difficulty == "easy":
-            row, col = random.choice(empty_cells)
+            row, col = random.choice(empty_cells)  # nosec B311
         elif difficulty == "medium":
             # Check for winning moves
             for cell in empty_cells:
@@ -77,11 +77,11 @@ def make_computer_move(board, difficulty):
                         row, col = cell
                         break
                 else:
-                    row, col = random.choice(empty_cells)
+                    row, col = random.choice(empty_cells)  # nosec B311
         else:
             # Choose the best move using a more advanced algorithm (e.g., Minimax)
             # Implementation of Minimax is beyond the scope of this example
-            row, col = random.choice(empty_cells)
+            row, col = random.choice(empty_cells)  # nosec B311
 
         time.sleep(1)  # Add a delay of 1 second before computer's move
         board[row][col] = "✓"  # Use tick symbol instead of "O"

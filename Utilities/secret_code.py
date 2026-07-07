@@ -7,7 +7,7 @@ import time
 
 # Function to encode a word
 def encode_word(word):
-    encoded_word = "".join(random.sample(word, len(word)))
+    encoded_word = "".join(random.sample(word, len(word)))  # nosec B311
     return encoded_word
 
 

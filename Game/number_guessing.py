@@ -8,7 +8,7 @@ print(
 
 lower = int(input("Enter Lower(mininum) limit:- "))
 upper = int(input("Enter Upper(maxinum) limit:- "))
-x = random.randint(lower, upper)
+x = random.randint(lower, upper)  # nosec B311
 print(
     "\n\tYou've only ",
     round(math.log(upper - lower + 1, 2)),

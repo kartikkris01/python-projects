@@ -9,7 +9,7 @@ import time
 
 # Function for generating a random number on the dice
 def dice_roll():
-    dice_number = random.randrange(1, 7, 1)
+    dice_number = random.randrange(1, 7, 1)  # nosec B311
     return dice_number
 
 

@@ -20,7 +20,7 @@ def add_new_2(mat):
             if mat[i][j] == 0:
                 empty_cells.append((i, j))
     if empty_cells:
-        i, j = random.choice(empty_cells)
+        i, j = random.choice(empty_cells)  # nosec B311
         mat[i][j] = 2
 
 

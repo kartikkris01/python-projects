@@ -10,7 +10,7 @@ time.sleep(3)
 
 def play_game():
     # Generate a random 4-digit number
-    num = random.randrange(1000, 10000)
+    num = random.randrange(1000, 10000)  # nosec B311
 
     # Initialize variables
     high_score = get_high_score()

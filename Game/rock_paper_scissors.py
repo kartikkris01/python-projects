@@ -37,7 +37,7 @@ def rock_paper_scissors():
             print("Invalid choice. Please try again.")
             continue
 
-        computer_choice = random.randint(0, 2)
+        computer_choice = random.randint(0, 2)  # nosec B311
 
         print("Player's move:", choices[player_choice])
         print("Computer's move:", choices[computer_choice])
