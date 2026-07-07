@@ -10,9 +10,9 @@ res = (800, 600)  # Decreased screen size to 800x600
 
 # randomly assigns a value to variables
 # ranging from lower limit to upper
-c1 = random.randint(125, 255)
-c2 = random.randint(0, 255)
-c3 = random.randint(0, 255)
+c1 = random.randint(125, 255)  # nosec B311
+c2 = random.randint(0, 255)  # nosec B311
+c3 = random.randint(0, 255)  # nosec B311
 
 screen = pygame.display.set_mode(res)
 clock = pygame.time.Clock()
@@ -60,19 +60,19 @@ exit1 = smallfont.render("Exit", True, white)
 
 # game title
 colox = smallfont.render("Colox", True, (c3, c2, c1))
-x1 = random.randint(width // 2, width)
-y1 = random.randint(100, height // 2)
+x1 = random.randint(width // 2, width)  # nosec B311
+y1 = random.randint(100, height // 2)  # nosec B311
 x2 = 40
 y2 = 40
 speed = 15
 
 # score of the player
 count = 0
-rgb = random.choice(color_list)
+rgb = random.choice(color_list)  # nosec B311
 
 # enemy position
-e_p = [width, random.randint(50, height - 50)]
-e1_p = [random.randint(width, width + 100), random.randint(50, height - 100)]
+e_p = [width, random.randint(50, height - 50)]  # nosec B311
+e1_p = [random.randint(width, width + 100), random.randint(50, height - 100)]  # nosec B311
 
 
 # function for game_over
@@ -164,12 +164,12 @@ def game(lead_y, lead_X, speed, count):
             if (
                 e_p[1] <= 40 or e_p[1] >= height - 80
             ):  # Prevent appearing on top and bottom color banners
-                e_p[1] = random.randint(40, height - 80)
+                e_p[1] = random.randint(40, height - 80)  # nosec B311
             if (
                 e1_p[1] <= 40 or e1_p[1] >= height - 80
             ):  # Prevent appearing on top and bottom color banners
-                e1_p[1] = random.randint(40, height - 80)
-            e_p[1] = random.randint(enemy_size, height - enemy_size)
+                e1_p[1] = random.randint(40, height - 80)  # nosec B311
+            e_p[1] = random.randint(enemy_size, height - enemy_size)  # nosec B311
             e_p[0] = width
 
         if lead_x <= e_p[0] <= lead_x + 40 and lead_y >= e_p[1] >= lead_y - 40:
@@ -188,13 +188,13 @@ def game(lead_y, lead_X, speed, count):
             if (
                 e1_p[1] <= 40 or e1_p[1] >= height - 80
             ):  # Prevent appearing on top and bottom color banners
-                e1_p[1] = random.randint(40, height - 80)
-            e1_p[1] = random.randint(enemy_size, height - 40)
+                e1_p[1] = random.randint(40, height - 80)  # nosec B311
+            e1_p[1] = random.randint(enemy_size, height - 40)  # nosec B311
             e1_p[0] = width + 100
 
         if lead_x <= e1_p[0] <= lead_x + 40 and e1_p[1] <= lead_y <= e1_p[1] + 40:
             e1_p[0] = width + 100
-            e1_p[1] = random.randint(40, height - 40)
+            e1_p[1] = random.randint(40, height - 40)  # nosec B311
             count += 1
             speed += 1
 
@@ -203,7 +203,7 @@ def game(lead_y, lead_X, speed, count):
             and lead_x <= e1_p[0] <= lead_x + 40
         ):
             e1_p[0] = width + 100
-            e1_p[1] = random.randint(40, height - 40)
+            e1_p[1] = random.randint(40, height - 40)  # nosec B311
             count += 1
             speed += 1
 

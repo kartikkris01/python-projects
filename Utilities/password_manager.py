@@ -17,8 +17,8 @@ import os
 import getpass
 from cryptography.fernet import Fernet
 
-PASSWORD_FILE = "passwords.json"
-MASTER_PASSWORD_FILE = "master_password.txt"
+PASSWORD_FILE = os.getenv("PASSWORD_FILE", "passwords.json")
+MASTER_PASSWORD_FILE = os.getenv("MASTER_PASSWORD_FILE", "master_password.txt")
 
 
 def generate_key():

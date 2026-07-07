@@ -25,8 +25,8 @@ class Notepad:
         # Set icon
         try:
             self.__root.wm_iconbitmap("Notepad.ico")
-        except:
-            pass
+        except Exception as e:
+            print(f"Warning: Could not load icon: {e}")
 
         # Set window size (the default is 300x300)
 
@@ -126,11 +126,12 @@ class Notepad:
             self.__root.title(os.path.basename(self.__file) + " - Notepad")
             self.__thisTextArea.delete(1.0, END)
 
-            file = open(self.__file, "r")
-
-            self.__thisTextArea.insert(1.0, file.read())
-
-            file.close()
+            try:
+                file = open(self.__file, "r")
+                self.__thisTextArea.insert(1.0, file.read())
+                file.close()
+            except Exception as e:
+                showerror("Error", f"Could not open file: {e}")
 
     def __newFile(self):
         self.__root.title("Untitled - Notepad")
@@ -150,9 +151,12 @@ class Notepad:
                 self.__file = None
             else:
                 # Try to save the file
-                file = open(self.__file, "w")
-                file.write(self.__thisTextArea.get(1.0, END))
-                file.close()
+                try:
+                    file = open(self.__file, "w")
+                    file.write(self.__thisTextArea.get(1.0, END))
+                    file.close()
+                except Exception as e:
+                    showerror("Error", f"Could not save file: {e}")
 
                 # Change the window title
                 self.__root.title(os.path.basename(self.__file) + " - Notepad")

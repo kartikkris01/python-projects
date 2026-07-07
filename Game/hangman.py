@@ -18,7 +18,7 @@ def hangman():
         "grapefruit",
         "blueberry",
     ]
-    word = random.choice(words)
+    word = random.choice(words)  # nosec B311
     guessed_letters = []
     attempts = 5
 

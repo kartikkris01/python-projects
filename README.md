@@ -84,7 +84,7 @@ The repository is organized into categories, each containing specific project fo
 - [Integration and Differentiation](https://github.com/drik493/python_projects/blob/main/Calculator/int_diff.py)
 - [BMI Calculator](https://github.com/drik493/python_projects/blob/main/Calculator/bmi.py)
 - [Roman to Decimal Converter](Calculator/roman_number.py)
-- [Time Calculator](https://github.com/mrayanasim09/python-projects/blob/main/Calculator/time_calulator.py)
+- [Time Calculator](https://github.com/mrayanasim09/python-projects/blob/main/Calculator/time_calculator.py)
 - [Special Relativity Calculator](Calculator/special_relativity_calculator.py)
 - [Collatz Conjecture (GUI)](https://github.com/drik493/python_projects/blob/main/Calculator/conject.py)
 - [Fibonacci Sequence](https://github.com/drik493/python_projects/blob/main/Calculator/sequence.py)

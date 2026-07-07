@@ -68,7 +68,7 @@ def roll_dice():
 
         print("Rolling the dice...")
         time.sleep(1)  # Pause for 1 second to create rolling effect
-        dice_value = random.randint(min_value, max_value)
+        dice_value = random.randint(min_value, max_value)  # nosec B311
         print(dice_faces[dice_value - 1])  # Display the corresponding dice face
 
         if user_guess == dice_value:
